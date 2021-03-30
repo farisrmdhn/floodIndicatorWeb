@@ -127,11 +127,11 @@ class Pages extends CI_Controller {
 	}
 
 	public function send_mobile_notification() {
-		$key = "AAAAcbN2nAY:APA91bHA7d6b-Cn0vSo7xIuKf-8ykj5V2JE4eZ6ie-WGJMOPly0eL_nKJzv5Z1q5eKaXZbznl-71r2F-Lz2Xnqh-fvqfi3QXqAkGykoljaIP7ACvvDnNrx4w8WeP6QIhqs2uqEDDToIx";
+		$key = "XXXXXXXXXX";
 
 		$fcm_url = 'https://fcm.googleapis.com/fcm/send';
 
-		$token = "cG95SaEGQRCwiO43Z1AeUS:APA91bF1VWhxRdFcRNzqM1_kB9IniPsisKdaUnpU9C5hR2b_zYgLfniFTDLhYX6tej7Xvw99qNLFzGIm09pO4gkXLPaOU9HM0ZELXF36Gpi9DBe4NJCC1yZ_Bq1G5WyN8-Gulfi7HV9j";
+		$token = "XXXXXXXXXXX";
 
 		$notification = [
 			// 'title' => $title,
