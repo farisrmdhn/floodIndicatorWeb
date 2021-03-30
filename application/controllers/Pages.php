@@ -51,7 +51,7 @@ class Pages extends CI_Controller {
 	//Page for receiving post data from ethernet shield
 	public function add(){
 		$detector_id = $this->input->post('detector_id');
-		$api_key = 'cbb85ec58a052252644729c964c22c30';
+		$api_key = 'XXXXXXXXXXXXXXXXXXXXXXX';
 		$detector = $this->detector_model->get_detectors($detector_id);
 		$json = file_get_contents('http://api.openweathermap.org/data/2.5/weather?lat='.$detector['latitude'].'&lon='.$detector['longitude'].'&units=metric&appid='.$api_key);
 		$weather = json_decode($json,true);
